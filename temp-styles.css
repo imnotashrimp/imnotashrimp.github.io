@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 48pt;
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 20pt;
+}
