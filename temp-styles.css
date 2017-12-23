@@ -1,6 +1,7 @@
 body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    background-color: #cbe9f4;
 }
 
 h1 {
@@ -8,10 +9,15 @@ h1 {
     margin-top: 50px;
     font-weight: 700;
     font-size: 48pt;
+    color: #0091c2;
 }
 
 p {
     margin: 20px;
     font-weight: 300;
     font-size: 20pt;
+}
+
+a {
+    color: black;
 }
