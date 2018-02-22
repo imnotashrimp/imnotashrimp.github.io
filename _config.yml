@@ -7,6 +7,7 @@ exclude:
   - "LICENSE.md"
   - "*.gemspec"
   - "*.sh"
+  - "/notes/"
 
 keep_files:
   - "CNAME"
@@ -18,8 +19,7 @@ keep_files:
 title: Shalom Boroda
 subtitle: "Technical and marketing content"
 url: "" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: ""
+baseurl: "" # Set this value to "" if you want your site to be root
 #cover: "/assets/cover.png"
 #logo: "/assets/logo.png"
 

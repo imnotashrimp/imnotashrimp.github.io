@@ -18,10 +18,9 @@
 /*@import url(//fonts.googleapis.com/css?family=Volkhov:400italic);*/
 
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,700|Raleway:400,500,800');
-@import url('https://fonts.googleapis.com/css?family=Dosis:700,800');
 @import url('https://fonts.googleapis.com/css?family=Rosario:400');
 
-/* var text-decoration */
+
 
 /*--
 	Common Css
@@ -36,9 +35,15 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0194cc;
+}
+
+h1#page-title, .overly h2 {
+    color: white;
 }
 
 h2 {
@@ -51,15 +56,30 @@ h3 {
     font-weight: 300;
 }
 
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: 'barlow', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #0194cc;
+}
+
 p {
+    padding-bottom: 25px;
     font-size: 15px;
     line-height: 28px;
 }
 
 ul {
     padding: 0;
-    margin: 0;
-    list-style: none;
+    margin-left: 15px;
+    margin-top: 0;
+    list-style: disc;
 }
 
 a,
@@ -85,9 +105,32 @@ a:active {
     color: #666;
 }
 
-/*--
-	Header Start
---*/
+
+/* Table styling */
+td,
+th {
+    border: 1px solid white;
+    padding: 4px 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #cdf1ff;
+}
+
+tr:nth-child(even) {
+    background-color: #9ae3ff;
+}
+
+thead > tr {
+    background-color: #4dceff !important;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header Start */
 
 header {
     /*    background: #fff;*/
@@ -190,7 +233,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #intro {
-    padding: 100px 0;
+    padding: 30px 0;
     /*    background: linear-gradient(to right, #ffd99a, #ffffff);*/
 }
 
@@ -632,18 +675,19 @@ font header .navbar-default .navbar-nav li a:hover {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    /*    background: rgba(0, 0, 0, 0.9);*/
+    background: rgba(0, 55, 76, .7);
     opacity: 0;
     -webkit-transition: .3s all;
     -o-transition: .3s all;
     transition: .3s all;
-    text-align: center;
+    text-align: left;
 }
 
 #portfolio-work .block .portfolio-contant .position-center {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 10px;
     -webkit-transform: translate(0%, 50%);
     -moz-transform: translate(0%, 50%);
     -ms-transform: translate(0%, 50%);
@@ -985,4 +1029,129 @@ footer .footer-manu ul li a {
 
 footer .footer-manu ul li a:hover {
     color: #00374c;
+}
+
+
+/*---------------------------------------------
+              Writing Sample Start
+-----------------------------------------------*/
+
+#sample-intro {
+    background-color: #e5eaed;
+    border-radius: 10px;
+    padding: 0px 30px;
+}
+
+#sample-intro h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #00374c;
+}
+
+#sample-copyright {
+    font-size: 12px;
+    font-style: normal;
+    color: #4c7281;
+}
+
+
+/* Definition lists */
+
+dt {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /*    border-top: 1px solid white;*/
+}
+
+dd {
+    margin-top: 0px;
+}
+
+dt:first-child {
+    border: none;
+}
+
+dl {
+    margin-bottom: 0px;
+}
+
+
+/* Procedures */
+
+div.procedure ol {
+    margin-top: 15px;
+    padding-left: 15px;
+    list-style: decimal;
+    outline-offset: 15px;
+}
+
+div.procedure ol ol {
+    list-style-type: lower-alpha;
+    padding-left: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+div.procedure h6 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+div.procedure img {
+    display: block;
+    margin: 10px auto;
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+div.procedure img.px-500 {
+    max-height: 500px !important;
+    max-width: 500px !important;
+}
+
+div.procedure {
+    margin: 30px;
+    border-left: 3px solid #0194cc;
+    padding-left: 10px;
+}
+
+span.note {
+    display: none;
+}
+
+
+/* Note, warning, info, and caution statements */
+
+div.note {
+    padding: 10px 15px 10px 50px;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+div.note {
+    background-color: #e0e0e0;
+}
+
+div.note p::before {
+    font-family: "fontawesome";
+    content: "\f040";
+    font-size: 25px;
+    margin-left: -25px;
+}
+
+
+div.note p {
+/*    margin-left: 30px;*/
+}
+
+.post .block p {
+    color: black !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

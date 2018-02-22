@@ -1,0 +1,73 @@
+---
+layout: writing_sample 
+title: Writing Sample - Controlling Your LEDs 
+description: I wrote this content for a product brochure for a new LED luminaire from Philips Color Kinetics. It is product-agnostic, as it’s intended for reuse in multiple product brochures. It is written for an audience of lighting designers, who have technical expertise in the areas of lighting and controls. 
+---
+
+<h2>Upgrading Light System Engine</h2>
+<p>Periodically, we update Light System Engine software to provide improvements, enhancements, and bug fixes. Up to two software versions can be installed on Light System Engine gen5 at any given time, so you can roll back an update if you encounter unexpected behavior.</p>
+
+<h3>Upgrade Light System Engine</h3>
+
+<p>Software updates are available for download at <a href='http://www.colorkinetics.com/support/lsm/'>www.colorkinetics.com/support/lsm/</a>. You can update your software through the LSE web interface.</p>
+<div class="procedure">
+    <h6>To find your Light System Engine software version:</h6>
+    <ol>
+        <li>Log in to the LSE web interface, and click <b>Config</b>.</li>
+        <li>From the left menu, navigate to <b>Settings > About</b>. Your software version is the last entry on this screen.</li>
+        <img src="{{ site.baseurl }}/img/portfolio/sample-images/version_num.png" />
+    </ol>
+    <div class='note'><span class='note'>Note</span>If you want to upgrade from version 1.9.6 or earlier, contact Technical Support.</div>
+</div>
+
+<div class='procedure'>
+    <h6>To upgrade from version 2.0 or later:</h6>
+    <ol>
+        <li>Download the latest software file from <a href='http://www.colorkinetics.com/support/lsm/'>www.colorkinetics.com/support/lsm/</a>. Do not change the file name.</li>
+        <li>If you already have two versions installed on Light System Engine, delete the inactive version:</li>
+        <ol>
+            <li>Log in to the LSE web interface, and click <b>Config</b>.</li>
+            <li>From the left menu, navigate to <b>Updates > Versions</b>.</li>
+            <img src="{{ site.baseurl }}/img/portfolio/sample-images/versions.png" />
+            <li>Select the inactive version from the <b>Current Version</b> list, and click <b>Delete</b>. Light System Engine prevents you from deleting the <i>active</i> and <i>recovery</i> versions.</li>
+        </ol>
+        <li>Back up your Light System Engine database. For more information, see &ldquo;Database Backup&rdquo; on page 66.</li>
+        <li>Upload the software file from your computer to Light System Engine:</li>
+        <ol>
+            <li>In the Config page, select <b>Updates > Upload</b> from the left menu.</li>
+            <img src="{{ site.baseurl }}/img/portfolio/sample-images/upload_package.png" />
+            <li>Click <b>Choose File</b>, and then select the software file you downloaded in step 1.</li>
+            <li>Click <b>Save</b>. Light System Engine shows the message that the software file was uploaded.</li>
+        </ol>
+        <li>Reboot Light System Engine.</li>
+    </ol>
+    <div class="note"><span class='note'>Note</span>All data is copied to the new software version. Data is stored independently with each software version, so any changes you make in the new version are not reflected in the previous version.</div>
+
+    <p>After rebooting, Light System Engine runs the new software version. If you can log in to the LSE web interface from your computer, you're done with the upgrade.</p>
+
+    <p>If Light System Engine fails to reboot, this means the upgrade wasn't successful. If this happens, you'll need to restore your Light System Engine to the previous software version. These instructions are shown in <a href="#recover">Recover from an unsuccessful upgrade</a>.</p>
+</div>
+
+<h3 id='recover'>Recover from an unsuccessful upgrade</h3>
+<p>Normally, Light System Engine is stored in a secure location without a keyboard or monitor. If you need to recover from an unsuccessful upgrade, you'll need a keyboard, a monitor, and physical access to Light System Engine.</p>
+
+<div class="procedure">
+    <h6>To recover from an unsuccessful upgrade</h6>
+
+    <ol>
+        <li>Turn off Light System Engine.</li>
+        <li>Connect your keyboard and monitor, and then turn on Light System Engine. The boot loader screen is displayed.</li>
+        <img src="{{ site.baseurl }}/img/portfolio/sample-images/boot_screen.png" class="px-500" />
+        <li>Using your keyboard arrow keys, select the previous software version, and then press Enter. You can now disconnect the keyboard and monitor.</li>
+        <li>Delete the inactive software version:</li>
+        <ol>
+            <li>From your computer, log in to the LSE web interface, and click <b>Config</b>.</li>
+            <li>From the left menu, navigate to <b>Updates > Versions</b>.</li>
+            <img src="{{ site.baseurl }}/img/portfolio/sample-images/versions.png" />
+            <li>Select the inactive version from the <b>Current Version</b> list, and click <b>Delete</b>.</li>
+        </ol>
+    </ol>
+
+    <div class="note"><p>If you are unable to boot into either software version installed on your Light System Engine, contact Technical Support.</p></div>
+
+</div>
