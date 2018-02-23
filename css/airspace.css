@@ -107,6 +107,11 @@ a:active {
 
 
 /* Table styling */
+
+table {
+/*    margin-top: 10px;*/
+}
+
 td,
 th {
     border: 1px solid white;
@@ -660,7 +665,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a span {
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
     color: #655E7A;
 }
 
@@ -1078,8 +1083,32 @@ dl {
 }
 
 
-/* Procedures */
+/*--
+Procedures - start
+-- */
 
+div.procedure {
+    margin: 30px;
+    border-left: 3px solid #0194cc;
+    padding-left: 10px;
+}
+
+/* all text 15px */
+div.procedure * {
+    font-size: 15px;   
+}
+
+div.procedure p {
+    padding: 0;
+}
+
+/* procedure intros - h6, bold */
+div.procedure h6 {
+    font-weight: 600;
+}
+
+
+/* list and nested list formatting */
 div.procedure ol {
     margin-top: 15px;
     padding-left: 15px;
@@ -1094,11 +1123,8 @@ div.procedure ol ol {
     margin-bottom: 1px;
 }
 
-div.procedure h6 {
-    font-size: 15px;
-    font-weight: 600;
-}
 
+/* images - 300px max, if no class set */
 div.procedure img {
     display: block;
     margin: 10px auto;
@@ -1113,42 +1139,49 @@ div.procedure img.px-500 {
     max-width: 500px !important;
 }
 
-div.procedure {
-    margin: 30px;
-    border-left: 3px solid #0194cc;
-    padding-left: 10px;
-}
+/* notes, tips, cautions, and warning statements go here */
 
 span.note {
+/*    this is left over from writing samples OUTSIDE sboroda.com - keep as placeholder until fontawesome icons are formatted. if removing this, also remove <span> elements from writing sample html pages */
     display: none;
 }
 
-
-/* Note, warning, info, and caution statements */
-
 div.note {
-    padding: 10px 15px 10px 50px;
+/*    padding: 5px 15px 10px 55px;*/
+    padding: 5px;
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    background-color: #e0e0e0;
+/*    border: 3px solid gray;*/
 }
 
-div.note {
-    background-color: #e0e0e0;
+div.note p {
+    margin: 5px 15px 10px 55px;
 }
 
 div.note p::before {
     font-family: "fontawesome";
     content: "\f040";
+    color: #616161;
     font-size: 25px;
-    margin-left: -25px;
+    max-width: 25px;
+    min-width: 25px;
+    margin-left: -40px;
+    margin-right: 20px;
 }
 
-
-div.note p {
-/*    margin-left: 30px;*/
+/*
+span.note-icon::before {
+    set fontawesome note icon 
+    font-family: "fontawesome";
+    content: "\f040";
+    font-size: 25px;
+    margin-left: -40px;
 }
+*/
+
 
 .post .block p {
     color: black !important;
