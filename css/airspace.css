@@ -1172,19 +1172,26 @@ div.note p::before {
     margin-right: 20px;
 }
 
-/*
-span.note-icon::before {
-    set fontawesome note icon 
-    font-family: "fontawesome";
-    content: "\f040";
-    font-size: 25px;
-    margin-left: -40px;
-}
-*/
-
 
 .post .block p {
     color: black !important;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+/* CK spec sheet styles */
+table.ck-spec-table td {
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+table.ck-spec-table th {
+    background-color: white;
+    border: none;
+}
+
+table.ck-spec-table th h4 {
+    margin-bottom: 0;
 }
