@@ -17,7 +17,7 @@
 
 /*@import url(//fonts.googleapis.com/css?family=Volkhov:400italic);*/
 
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,700|Raleway:400,500,800');
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,700|Raleway:400,500,800');
 @import url('https://fonts.googleapis.com/css?family=Rosario:400');
 
 
@@ -107,28 +107,23 @@ a:active {
 
 
 /* Table styling */
-
-table {
-/*    margin-top: 10px;*/
+table td {
+    background-color: white;
+    border-bottom: 1px solid #9ad4eb;
+    border-top: 1px solid #9ad4eb;
+    border-left: none;
+    border-right: none;
 }
 
-td,
-th {
-    border: 1px solid white;
-    padding: 4px 10px;
+table th {
+    background-color: white;
+    border: none;
 }
 
-tr:nth-child(odd) {
-    background-color: #cdf1ff;
+table th h4 {
+    margin-bottom: 0;
 }
 
-tr:nth-child(even) {
-    background-color: #9ae3ff;
-}
-
-thead > tr {
-    background-color: #4dceff !important;
-}
 
 video {
     display: block;
@@ -1041,6 +1036,14 @@ footer .footer-manu ul li a:hover {
               Writing Sample Start
 -----------------------------------------------*/
 
+span.writing-sample-tag {
+    font-size: 15px;
+    font-family: "barlow", sans-serif;
+    margin-right: 0px;
+    margin-left: 25px;
+    float: right;
+}
+
 #sample-intro {
     background-color: #e5eaed;
     border-radius: 10px;
@@ -1059,6 +1062,25 @@ footer .footer-manu ul li a:hover {
     color: #4c7281;
 }
 
+.writing-sample-contents {
+    border-bottom: 1px dotted #00374c;
+    border-top: 1px dotted #00374c;
+    padding: 5px;
+}
+
+.writing-sample-contents h4 {
+    margin-top: 5px;
+}
+
+.ck-wow-statement {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.ck-overview {
+    font-size: 20px;
+    font-weight: 300;
+}
 
 /* Definition lists */
 
@@ -1139,15 +1161,9 @@ div.procedure img.px-500 {
     max-width: 500px !important;
 }
 
+
 /* notes, tips, cautions, and warning statements go here */
-
-span.note {
-/*    this is left over from writing samples OUTSIDE sboroda.com - keep as placeholder until fontawesome icons are formatted. if removing this, also remove <span> elements from writing sample html pages */
-    display: none;
-}
-
 div.note {
-/*    padding: 5px 15px 10px 55px;*/
     padding: 5px;
     max-width: 75%;
     margin-left: auto;
@@ -1177,21 +1193,4 @@ div.note p::before {
     color: black !important;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-/* CK spec sheet styles */
-table.ck-spec-table td {
-    background-color: white;
-    border-bottom: 1px solid black;
-    border-left: none;
-    border-right: none;
-}
-
-table.ck-spec-table th {
-    background-color: white;
-    border: none;
-}
-
-table.ck-spec-table th h4 {
-    margin-bottom: 0;
 }
