@@ -19,6 +19,13 @@
 <link rel="stylesheet" href="/css/animate.css" />
 <link rel="stylesheet" href="/css/responsive.css" />
 <link rel="stylesheet" href="/css/syntax.css" />
+<style type="text/css">
+    @media print {
+        .no-print {
+            display: none;
+        }
+    }
+</style>
 
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -49,7 +56,7 @@
 
 
     <!-- Header Start -->
-<header>
+<header class="no-print">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -99,8 +106,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1>Writing Portfolio</h1>
-                    <p>A small sample of the technical and marketing content I've created.</p>
+                    <h1 id="page-title">Writing Portfolio</h1>
+                    <p>A small sample of my technical and marketing writing.</p>
                 </div>
             </div>
         </div>
@@ -115,83 +122,84 @@
               <div class="portfolio-menu">
                 <ul>
                     <li class="filter" data-filter="all">Everything</li>
-                    <li class="filter" data-filter=".Branding">Software</li>
-                    <li class="filter" data-filter=".Websites">Hardware</li>
-                    <li class="filter" data-filter=".Graphic">Marketing</li>
-                    <li class="filter" data-filter=".design">API</li>
+                    <li class="filter" data-filter=".Software">Software</li>
+<!--                    <li class="filter" data-filter=".API">API</li>-->
+                    <li class="filter" data-filter=".Hardware">Hardware</li>
+                    <li class="filter" data-filter=".User-Guide">User Guides</li>
+                    <li class="filter" data-filter=".Spec-Sheet">Spec Sheets</li>
+                    <li class="filter" data-filter=".Marketing">Marketing</li>
 <!--                    <li class="filter" data-filter=".Video">Video</li>-->
                 </ul>
               </div>
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
-                    <li class="mix Branding">
-                      <a href="#">
-                        <img src="/img/portfolio/work1.jpg" alt="">
+                    <li class="mix Software User-Guide">
+                      <a href="writing_samples/antumbra-effect-options.html">
+                        <img src="/img/portfolio/antumbra-touch-icolor-keypad.jpg" alt="">
                         <div class="overly">
                           <div class="position-center">
-                            <h2>Tesla Motors</h2>
-                            <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
+                            <h2>User Guide</h2>
+                            <p>Antumbra iColor Keypad Effect Manager&mdash;Lighting Effect Options</p>
                           </div>
                         </div>
                       </a>
                   </li>
-                  <li class="mix Websites">
-                    <a href="#">
-                      <img src="/img/portfolio/work2.jpg" alt="">
+                  <li class="mix Marketing">
+                    <a href="writing_samples/reachelite-network-controls-marketing.html">
+                      <img src="/img/portfolio/reachelite-rgba.jpg" alt="">
                       <div class="overly">
                         <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                          <h2>Marketing</h2>
+                          <p>LED control and interactivity</p>
 
                         </div>
                       </div>
                     </a>
                   </li>
-                  <li class="mix Graphic">
-                    <a href="#">
-                      <img src="/img/portfolio/work3.jpg" alt="">
+                  <li class="mix Hardware Software User-Guide">
+                    <a href="writing_samples/upgrade-light-system-engine.html">
+                      <img src="/img/portfolio/light-system-engine.jpg" alt="">
                       <div class="overly">
                         <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                          <h2>User Guide</h2>
+                          <p>Light System Engine&mdash;Upgrade procedures</p>
 
                         </div>
                       </div>
 
                     </a>
                   </li>
-                  <li class="mix design">
-                    <a href="#">
+                  <li class="mix Marketing">
+                    <a href="writing_samples/vaya-free-form-brochure-marketing.html">
                       <img src="/img/portfolio/work4.jpg" alt="">
                       <div class="overly">
                         <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                          <h2>Marketing</h2>
+                          <p>Vaya Free Form&mdash;Brochure for new LED luminaire</p>
 
                         </div>
                       </div>
                     </a>
                   </li>
-                  <li class="mix Video">
-                    <a href="#">
-                      <img src="/img/portfolio/work5.jpg" alt="">
+                  <li class="mix Hardware Spec-Sheet">
+                    <a href="writing_samples/multi-protocol-converter-8-spec-sheet.html">
+                      <img src="/img/portfolio/multi-protocol-converter-8.jpg" alt="">
                       <div class="overly">
                         <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                          <h2>Spec Sheet</h2>
+                          <p>Multi-Protocol Converter 8</p>
 
                         </div>
                       </div>
                     </a>
                   </li>
-                  <li class="mix Graphic">
-                    <a href="#">
-                      <img src="/img/portfolio/work6.jpg" alt="">
+                  <li class="mix Hardware Spec-Sheet">
+                    <a href="writing_samples/cm-150-ca-spec-sheet.html">
+                      <img src="/img/portfolio/cm-150-ca.jpg" alt="">
                       <div class="overly">
                         <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                          <h2>Spec Sheet</h2>
+                          <p>CM-150 CA</p>
 
                         </div>
                       </div>
@@ -206,6 +214,7 @@
 </section>
 
 <!-- Clients Logo Section Start -->
+<!--
 <section id="clients-logo-section">
   <div class="container">
     <div class="row">
@@ -221,6 +230,7 @@
     </div>
   </div>
 </section>
+-->
 
 
 <!-- Call to action Start -->
@@ -252,20 +262,27 @@
 
 
     <!-- footer Start -->
-<footer>
+<footer clas="no-print">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="footer-manu">
+                <div class="footer-manu no-print">
                     <ul>
-                        <li><a href="/index.html#">About Us</a></li>
-                        <li><a href="/contact">Contact me</a></li>
-                        <li><a href="#">How it works</a></li>
-<!--                        <li><a href="/blog">Blog</a></li>-->
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="/index.html#">About Me</a></li>
+                        <li><a href="/portfolio/">Writing Portfolio</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <!--                        <li><a href="/blog">Blog</a></li>-->
                     </ul>
                 </div>
-                <p>Copyright &copy; 2018 Shalom Boroda. <br /> Theme designed &amp; developed by <a href="http://www.themefisher.com">Themefisher</a>, modified by Shalom Boroda. <br /> All rights reserved.</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/sboroda/"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/imnotashrimp"><i class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                <p>Copyright &copy; 2018 Shalom Boroda. Theme designed &amp; developed by <a href="http://www.themefisher.com">Themefisher</a>, modified by Shalom Boroda. All rights reserved.</p>
             </div>
         </div>
     </div>

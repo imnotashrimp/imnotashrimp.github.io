@@ -17,11 +17,10 @@
 
 /*@import url(//fonts.googleapis.com/css?family=Volkhov:400italic);*/
 
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,700|Raleway:400,500,800');
-@import url('https://fonts.googleapis.com/css?family=Dosis:700,800');
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,700|Raleway:400,500,800');
 @import url('https://fonts.googleapis.com/css?family=Rosario:400');
 
-/* var text-decoration */
+
 
 /*--
 	Common Css
@@ -36,9 +35,15 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0194cc;
+}
+
+h1#page-title, .overly h2 {
+    color: white;
 }
 
 h2 {
@@ -51,15 +56,30 @@ h3 {
     font-weight: 300;
 }
 
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: 'barlow', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #0194cc;
+}
+
 p {
+    padding-bottom: 25px;
     font-size: 15px;
     line-height: 28px;
 }
 
 ul {
     padding: 0;
-    margin: 0;
-    list-style: none;
+    margin-left: 15px;
+    margin-top: 0;
+    list-style: disc;
 }
 
 a,
@@ -85,9 +105,32 @@ a:active {
     color: #666;
 }
 
-/*--
-	Header Start
---*/
+
+/* Table styling */
+table td {
+    background-color: white;
+    border-bottom: 1px solid #9ad4eb;
+    border-top: 1px solid #9ad4eb;
+    border-left: none;
+    border-right: none;
+}
+
+table th {
+    background-color: white;
+    border: none;
+}
+
+table th h4 {
+    margin-bottom: 0;
+}
+
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header Start */
 
 header {
     /*    background: #fff;*/
@@ -190,7 +233,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #intro {
-    padding: 100px 0;
+    padding: 30px 0;
     /*    background: linear-gradient(to right, #ffd99a, #ffffff);*/
 }
 
@@ -617,7 +660,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li a span {
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
     color: #655E7A;
 }
 
@@ -632,18 +675,19 @@ font header .navbar-default .navbar-nav li a:hover {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    /*    background: rgba(0, 0, 0, 0.9);*/
+    background: rgba(0, 55, 76, .7);
     opacity: 0;
     -webkit-transition: .3s all;
     -o-transition: .3s all;
     transition: .3s all;
-    text-align: center;
+    text-align: left;
 }
 
 #portfolio-work .block .portfolio-contant .position-center {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 10px;
     -webkit-transform: translate(0%, 50%);
     -moz-transform: translate(0%, 50%);
     -ms-transform: translate(0%, 50%);
@@ -985,4 +1029,168 @@ footer .footer-manu ul li a {
 
 footer .footer-manu ul li a:hover {
     color: #00374c;
+}
+
+
+/*---------------------------------------------
+              Writing Sample Start
+-----------------------------------------------*/
+
+span.writing-sample-tag {
+    font-size: 15px;
+    font-family: "barlow", sans-serif;
+    margin-right: 0px;
+    margin-left: 25px;
+    float: right;
+}
+
+#sample-intro {
+    background-color: #e5eaed;
+    border-radius: 10px;
+    padding: 0px 30px;
+}
+
+#sample-intro h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #00374c;
+}
+
+#sample-copyright {
+    font-size: 12px;
+    font-style: normal;
+    color: #4c7281;
+}
+
+.writing-sample-contents {
+    border-bottom: 1px dotted #00374c;
+    border-top: 1px dotted #00374c;
+    padding: 5px;
+}
+
+.writing-sample-contents h4 {
+    margin-top: 5px;
+}
+
+.ck-wow-statement {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.ck-overview {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Definition lists */
+
+dt {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /*    border-top: 1px solid white;*/
+}
+
+dd {
+    margin-top: 0px;
+}
+
+dt:first-child {
+    border: none;
+}
+
+dl {
+    margin-bottom: 0px;
+}
+
+
+/*--
+Procedures - start
+-- */
+
+div.procedure {
+    margin: 30px;
+    border-left: 3px solid #0194cc;
+    padding-left: 10px;
+}
+
+/* all text 15px */
+div.procedure * {
+    font-size: 15px;   
+}
+
+div.procedure p {
+    padding: 0;
+}
+
+/* procedure intros - h6, bold */
+div.procedure h6 {
+    font-weight: 600;
+}
+
+
+/* list and nested list formatting */
+div.procedure ol {
+    margin-top: 15px;
+    padding-left: 15px;
+    list-style: decimal;
+    outline-offset: 15px;
+}
+
+div.procedure ol ol {
+    list-style-type: lower-alpha;
+    padding-left: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+/* images - 300px max, if no class set */
+div.procedure img {
+    display: block;
+    margin: 10px auto;
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+div.procedure img.px-500 {
+    max-height: 500px !important;
+    max-width: 500px !important;
+}
+
+
+/* notes, tips, cautions, and warning statements go here */
+div.note {
+    padding: 5px;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+/*    border: 3px solid gray;*/
+}
+
+div.note p {
+    margin: 5px 15px 10px 55px;
+}
+
+div.note p::before {
+    font-family: "fontawesome";
+    content: "\f040";
+    color: #616161;
+    font-size: 25px;
+    max-width: 25px;
+    min-width: 25px;
+    margin-left: -40px;
+    margin-right: 20px;
+}
+
+
+.post .block p {
+    color: black !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

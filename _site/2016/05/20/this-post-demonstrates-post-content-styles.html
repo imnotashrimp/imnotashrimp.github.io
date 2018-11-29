@@ -19,6 +19,13 @@
 <link rel="stylesheet" href="/css/animate.css" />
 <link rel="stylesheet" href="/css/responsive.css" />
 <link rel="stylesheet" href="/css/syntax.css" />
+<style type="text/css">
+    @media print {
+        .no-print {
+            display: none;
+        }
+    }
+</style>
 
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -49,7 +56,7 @@
 
 
     <!-- Header Start -->
-<header>
+<header class="no-print">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -209,20 +216,27 @@
 
 
     <!-- footer Start -->
-<footer>
+<footer clas="no-print">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="footer-manu">
+                <div class="footer-manu no-print">
                     <ul>
-                        <li><a href="/index.html#">About Us</a></li>
-                        <li><a href="/contact">Contact me</a></li>
-                        <li><a href="#">How it works</a></li>
-<!--                        <li><a href="/blog">Blog</a></li>-->
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="/index.html#">About Me</a></li>
+                        <li><a href="/portfolio/">Writing Portfolio</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <!--                        <li><a href="/blog">Blog</a></li>-->
                     </ul>
                 </div>
-                <p>Copyright &copy; 2018 Shalom Boroda. <br /> Theme designed &amp; developed by <a href="http://www.themefisher.com">Themefisher</a>, modified by Shalom Boroda. <br /> All rights reserved.</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/sboroda/"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/imnotashrimp"><i class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                <p>Copyright &copy; 2018 Shalom Boroda. Theme designed &amp; developed by <a href="http://www.themefisher.com">Themefisher</a>, modified by Shalom Boroda. All rights reserved.</p>
             </div>
         </div>
     </div>
